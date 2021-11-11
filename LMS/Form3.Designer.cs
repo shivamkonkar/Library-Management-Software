@@ -30,31 +30,25 @@ namespace LMS
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
-            this.PnlNav = new System.Windows.Forms.Panel();
-            this.LabelProfile = new System.Windows.Forms.Label();
-            this.BtnAdmin = new System.Windows.Forms.Button();
-            this.BtnStaff = new System.Windows.Forms.Button();
             this.BtnHistory = new System.Windows.Forms.Button();
             this.BtnLibrary = new System.Windows.Forms.Button();
             this.BtnProfile = new System.Windows.Forms.Button();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.label1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.PnlNav = new System.Windows.Forms.Panel();
+            this.LblTitle = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.label2 = new System.Windows.Forms.Label();
+            this.PnlFormLoader = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            this.panel3.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(30)))), ((int)(((byte)(54)))));
-            this.panel1.Controls.Add(this.BtnAdmin);
-            this.panel1.Controls.Add(this.BtnStaff);
             this.panel1.Controls.Add(this.BtnHistory);
             this.panel1.Controls.Add(this.BtnLibrary);
             this.panel1.Controls.Add(this.BtnProfile);
@@ -64,84 +58,6 @@ namespace LMS
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(186, 577);
             this.panel1.TabIndex = 0;
-            // 
-            // panel2
-            // 
-            this.panel2.Controls.Add(this.label1);
-            this.panel2.Controls.Add(this.pictureBox1);
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel2.Location = new System.Drawing.Point(0, 0);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(186, 144);
-            this.panel2.TabIndex = 0;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.Fuchsia;
-            this.label1.Location = new System.Drawing.Point(50, 100);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(98, 13);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "BrookLand Bliss";
-            // 
-            // PnlNav
-            // 
-            this.PnlNav.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
-            this.PnlNav.Location = new System.Drawing.Point(0, 193);
-            this.PnlNav.Name = "PnlNav";
-            this.PnlNav.Size = new System.Drawing.Size(3, 100);
-            this.PnlNav.TabIndex = 1;
-            // 
-            // LabelProfile
-            // 
-            this.LabelProfile.AutoSize = true;
-            this.LabelProfile.Font = new System.Drawing.Font("Microsoft Sans Serif", 21F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LabelProfile.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(158)))), ((int)(((byte)(161)))), ((int)(((byte)(176)))));
-            this.LabelProfile.Location = new System.Drawing.Point(209, 12);
-            this.LabelProfile.Name = "LabelProfile";
-            this.LabelProfile.Size = new System.Drawing.Size(104, 32);
-            this.LabelProfile.TabIndex = 2;
-            this.LabelProfile.Text = "Profile";
-            // 
-            // BtnAdmin
-            // 
-            this.BtnAdmin.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.BtnAdmin.FlatAppearance.BorderSize = 0;
-            this.BtnAdmin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnAdmin.Font = new System.Drawing.Font("Nirmala UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnAdmin.ForeColor = System.Drawing.Color.Fuchsia;
-            this.BtnAdmin.Image = global::LMS.Properties.Resources.icons8_admin_settings_male_30;
-            this.BtnAdmin.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.BtnAdmin.Location = new System.Drawing.Point(0, 535);
-            this.BtnAdmin.Name = "BtnAdmin";
-            this.BtnAdmin.Size = new System.Drawing.Size(186, 42);
-            this.BtnAdmin.TabIndex = 1;
-            this.BtnAdmin.Text = "Adminstrator";
-            this.BtnAdmin.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.BtnAdmin.UseVisualStyleBackColor = true;
-            this.BtnAdmin.Click += new System.EventHandler(this.button4_Click);
-            this.BtnAdmin.Leave += new System.EventHandler(this.BtnAdmin_Leave);
-            // 
-            // BtnStaff
-            // 
-            this.BtnStaff.Dock = System.Windows.Forms.DockStyle.Top;
-            this.BtnStaff.FlatAppearance.BorderSize = 0;
-            this.BtnStaff.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnStaff.Font = new System.Drawing.Font("Nirmala UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnStaff.ForeColor = System.Drawing.Color.Fuchsia;
-            this.BtnStaff.Image = global::LMS.Properties.Resources.icons8_people_30;
-            this.BtnStaff.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.BtnStaff.Location = new System.Drawing.Point(0, 270);
-            this.BtnStaff.Name = "BtnStaff";
-            this.BtnStaff.Size = new System.Drawing.Size(186, 42);
-            this.BtnStaff.TabIndex = 1;
-            this.BtnStaff.Text = "Staff";
-            this.BtnStaff.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.BtnStaff.UseVisualStyleBackColor = true;
-            this.BtnStaff.Click += new System.EventHandler(this.BtnStaff_Click);
-            this.BtnStaff.Leave += new System.EventHandler(this.BtnStaff_Leave);
             // 
             // BtnHistory
             // 
@@ -200,6 +116,27 @@ namespace LMS
             this.BtnProfile.Click += new System.EventHandler(this.BtnProfile_Click);
             this.BtnProfile.Leave += new System.EventHandler(this.BtnProfile_Leave);
             // 
+            // panel2
+            // 
+            this.panel2.Controls.Add(this.label1);
+            this.panel2.Controls.Add(this.pictureBox1);
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel2.Location = new System.Drawing.Point(0, 0);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(186, 144);
+            this.panel2.TabIndex = 0;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.Fuchsia;
+            this.label1.Location = new System.Drawing.Point(50, 100);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(98, 13);
+            this.label1.TabIndex = 1;
+            this.label1.Text = "BrookLand Bliss";
+            // 
             // pictureBox1
             // 
             this.pictureBox1.Image = global::LMS.Properties.Resources.icons8_books_64;
@@ -210,6 +147,25 @@ namespace LMS
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
+            // 
+            // PnlNav
+            // 
+            this.PnlNav.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
+            this.PnlNav.Location = new System.Drawing.Point(0, 193);
+            this.PnlNav.Name = "PnlNav";
+            this.PnlNav.Size = new System.Drawing.Size(3, 100);
+            this.PnlNav.TabIndex = 1;
+            // 
+            // LblTitle
+            // 
+            this.LblTitle.AutoSize = true;
+            this.LblTitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 21F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LblTitle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(158)))), ((int)(((byte)(161)))), ((int)(((byte)(176)))));
+            this.LblTitle.Location = new System.Drawing.Point(209, 12);
+            this.LblTitle.Name = "LblTitle";
+            this.LblTitle.Size = new System.Drawing.Size(104, 32);
+            this.LblTitle.TabIndex = 2;
+            this.LblTitle.Text = "Profile";
             // 
             // textBox1
             // 
@@ -234,24 +190,15 @@ namespace LMS
             this.button1.TabIndex = 4;
             this.button1.Text = "X";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // panel3
+            // PnlFormLoader
             // 
-            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(42)))), ((int)(((byte)(64)))));
-            this.panel3.Controls.Add(this.label2);
-            this.panel3.Location = new System.Drawing.Point(215, 76);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(258, 130);
-            this.panel3.TabIndex = 5;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(56, 34);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(35, 13);
-            this.label2.TabIndex = 0;
-            this.label2.Text = "label2";
+            this.PnlFormLoader.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.PnlFormLoader.Location = new System.Drawing.Point(186, 100);
+            this.PnlFormLoader.Name = "PnlFormLoader";
+            this.PnlFormLoader.Size = new System.Drawing.Size(765, 477);
+            this.PnlFormLoader.TabIndex = 5;
             // 
             // Form3
             // 
@@ -259,10 +206,10 @@ namespace LMS
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(51)))), ((int)(((byte)(73)))));
             this.ClientSize = new System.Drawing.Size(951, 577);
-            this.Controls.Add(this.panel3);
+            this.Controls.Add(this.PnlFormLoader);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.LabelProfile);
+            this.Controls.Add(this.LblTitle);
             this.Controls.Add(this.PnlNav);
             this.Controls.Add(this.panel1);
             this.ForeColor = System.Drawing.Color.White;
@@ -275,8 +222,6 @@ namespace LMS
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            this.panel3.ResumeLayout(false);
-            this.panel3.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -289,15 +234,12 @@ namespace LMS
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button BtnProfile;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button BtnAdmin;
-        private System.Windows.Forms.Button BtnStaff;
         private System.Windows.Forms.Button BtnHistory;
         private System.Windows.Forms.Button BtnLibrary;
         private System.Windows.Forms.Panel PnlNav;
-        private System.Windows.Forms.Label LabelProfile;
+        private System.Windows.Forms.Label LblTitle;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Panel PnlFormLoader;
     }
 }

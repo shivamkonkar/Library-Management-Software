@@ -10,3 +10,6 @@ C:\Users\shivam\source\repos\LMS\obj\Debug\LMS.pdb
 C:\Users\shivam\source\repos\LMS\obj\Debug\LMS.Form2.resources
 C:\Users\shivam\source\repos\LMS\obj\Debug\LMS.Form3.resources
 C:\Users\shivam\source\repos\LMS\obj\Debug\LMS.csproj.AssemblyReference.cache
+C:\Users\shivam\source\repos\LMS\obj\Debug\LMS.Form4.resources
+C:\Users\shivam\source\repos\LMS\obj\Debug\LMS.Form5.resources
+C:\Users\shivam\source\repos\LMS\obj\Debug\LMS.Form6.resources

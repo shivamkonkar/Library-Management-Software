@@ -31,7 +31,13 @@ namespace LMS
             PnlNav.Height = BtnProfile.Height;
             PnlNav.Top = BtnProfile.Top;
             PnlNav.Left = BtnProfile.Left;
-          
+
+            LblTitle.Text = "Profile";
+            this.PnlFormLoader.Controls.Clear();
+            Form4 fm4 = new Form4() { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
+            fm4.FormBorderStyle = FormBorderStyle.None;
+            this.PnlFormLoader.Controls.Add(fm4);
+            fm4.Show();
 
         }
 
@@ -51,6 +57,13 @@ namespace LMS
             PnlNav.Top = BtnProfile.Top;
             PnlNav.Left = BtnProfile.Left;
             BtnProfile.BackColor = Color.FromArgb(46, 51, 73);
+
+            LblTitle.Text = "Profile";
+            this.PnlFormLoader.Controls.Clear();
+            Form4 fm4 = new Form4() { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
+            fm4.FormBorderStyle = FormBorderStyle.None;
+            this.PnlFormLoader.Controls.Add(fm4);
+            fm4.Show();
         }
 
         private void BtnLibrary_Click(object sender, EventArgs e)
@@ -59,6 +72,16 @@ namespace LMS
             PnlNav.Top = BtnLibrary.Top;
             PnlNav.Left = BtnLibrary.Left;
             BtnLibrary.BackColor = Color.FromArgb(46, 51, 73);
+            LblTitle.Text = "Library";
+
+            
+            this.PnlFormLoader.Controls.Clear();
+            Form5 fm5 = new Form5() { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
+            fm5.FormBorderStyle = FormBorderStyle.None;
+            this.PnlFormLoader.Controls.Add(fm5);
+            fm5.Show();
+
+
         }
 
         private void BtnHistory_Click(object sender, EventArgs e)
@@ -67,23 +90,17 @@ namespace LMS
             PnlNav.Top = BtnHistory.Top;
             PnlNav.Left = BtnHistory.Left;
             BtnHistory.BackColor = Color.FromArgb(46, 51, 73);
+            LblTitle.Text = "History";
+
+            this.PnlFormLoader.Controls.Clear();
+            Form6 fm6 = new Form6() { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
+            fm6.FormBorderStyle = FormBorderStyle.None;
+            this.PnlFormLoader.Controls.Add(fm6);
+            fm6.Show();
+
         }
 
-        private void BtnStaff_Click(object sender, EventArgs e)
-        {
-            PnlNav.Height = BtnStaff.Height;
-            PnlNav.Top = BtnStaff.Top;
-            PnlNav.Left = BtnStaff.Left;
-            BtnStaff.BackColor = Color.FromArgb(46, 51, 73);
-        }
 
-        private void button4_Click(object sender, EventArgs e)
-        {
-            PnlNav.Height = BtnAdmin.Height;
-            PnlNav.Top = BtnAdmin.Top;
-            PnlNav.Left = BtnAdmin.Left;
-            BtnAdmin.BackColor = Color.FromArgb(46, 51, 73);
-        }
 
         private void BtnProfile_Leave(object sender, EventArgs e)
         {
@@ -100,15 +117,7 @@ namespace LMS
             BtnHistory.BackColor = Color.FromArgb(24, 30, 54);
         }
 
-        private void BtnStaff_Leave(object sender, EventArgs e)
-        {
-            BtnStaff.BackColor = Color.FromArgb(24, 30, 54);
-        }
-
-        private void BtnAdmin_Leave(object sender, EventArgs e)
-        {
-            BtnAdmin.BackColor = Color.FromArgb(24, 30, 54);
-        }
+     
 
         private void label2_Click(object sender, EventArgs e)
         {
@@ -116,6 +125,16 @@ namespace LMS
         }
 
         private void textBox2_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void panel3_Paint(object sender, PaintEventArgs e)
         {
 
         }
