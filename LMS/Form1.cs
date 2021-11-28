@@ -1,12 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using Oracle.ManagedDataAccess.Client;
+using System;
 using System.Windows.Forms;
+using Oracle.ManagedDataAccess;
+
+
+
+
 
 namespace LMS
 {
@@ -29,19 +28,40 @@ namespace LMS
 
         private void button1_Click(object sender, EventArgs e)
         {
-            if (txtUserName.Text=="ADMIN" && textpassword.Text=="123")
+            string oradb = "Data Source=localhost:1521/XE;User Id = ADMIN1; Password = 08092002; ";
+            OracleConnection conn = new OracleConnection(oradb);
+            conn.Open();
+            OracleCommand cmd = new OracleCommand();
+            string username = txtUserName.Text;
+            string password = textpassword.Text;
+            if (txtUserName.Text == "" || textpassword.Text == "")
             {
-                new Form2().Show();
-                this.Hide();
+                MessageBox.Show("Please Enter your User Name and Passowrd");
             }
             else
             {
-                MessageBox.Show("The Username or password you entered is incorrect, try again");
-                txtUserName.Clear();
-                textpassword.Clear();
-                txtUserName.Focus();
+                cmd.CommandText = "select * from REGISTRATION where username='" + username + "' and password = '" + password + "'";
+                cmd.Connection = conn;
+
+                OracleDataReader dr = cmd.ExecuteReader();
+                if (dr.Read())
+                {
+                    this.Hide();
+                    Form2 frm2 = new Form2();
+                    frm2.Show();
+                   
+                }
+                else
+                {
+                    MessageBox.Show("Invalid Login");
+                }
+
             }
+            conn.Dispose();
         }
+
+
+
 
         private void textPassword_TextChanged(object sender, EventArgs e)
         {
@@ -58,6 +78,12 @@ namespace LMS
         private void label3_Click(object sender, EventArgs e)
         {
             Application.Exit();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            new Form11().Show();
+            this.Hide();
         }
     }
 }

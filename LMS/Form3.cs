@@ -138,5 +138,25 @@ namespace LMS
         {
 
         }
+
+        private void LblTitle_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Lblsearch_TextChanged(object sender, EventArgs e)
+        {
+            do
+            {
+                Lblsearch.Text = "";
+                
+            }
+            while (false);
+        }
+
+        public void PnlFormLoader_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }
